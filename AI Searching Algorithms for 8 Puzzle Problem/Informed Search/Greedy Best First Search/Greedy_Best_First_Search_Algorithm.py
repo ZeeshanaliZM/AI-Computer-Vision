@@ -33,7 +33,7 @@ class Greedy_Best_Search:
         count = np.count_nonzero(diff)
         return count-1
 
-#This function is used to ensure to repeatitive states occur in the stack. 
+#This function is used to ensure no repeatitive states occur in the stack. 
     def list_present(self,list_check,current):
         for i in list_check:
             if((current.value==i.value).all()==True):
